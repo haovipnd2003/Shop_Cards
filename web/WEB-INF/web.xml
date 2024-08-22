@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>ManageInventProduct</servlet-name>
+        <servlet-class>control.ManageInventProduct</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DetailInvent</servlet-name>
+        <servlet-class>control.DetailInvent</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>updateInvent</servlet-name>
+        <servlet-class>control.updateInvent</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ManageInventProduct</servlet-name>
+        <url-pattern>/manageInventProduct</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DetailInvent</servlet-name>
+        <url-pattern>/detailInvent</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>updateInvent</servlet-name>
+        <url-pattern>/updateInvent</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SendEmailServlet</servlet-name>
+        <servlet-class>SendEmailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SendEmailServlet</servlet-name>
+        <url-pattern>/SendEmailServlet</url-pattern>
+    </servlet-mapping>
+<!--    <servlet>
+    <servlet-name>VNPayReturn</servlet-name>
+    <servlet-class>control.VNPayReturn</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>VNPayReturn</servlet-name>
+    <url-pattern>/vnpay_return</url-pattern>
+</servlet-mapping>-->
+
+</web-app>
